@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            height: 455vh;
+            width: 400vw;
+            background-color: aqua;
+
+        }
+.box{
+    height: 20vh;
+    width:140vw;
+    background-color: red;
+    color:aliceblue;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     /* animation-name: WidthAnimation;
+     animation-duration: 3s;
+     animation-timing-function: ease-in-out;
+     animation-delay: 1s;
+     animation-iteration-count: 3;
+     animation-direction: alternate-reverse ; */
+     animation: WidthAnimation 3s  ease-in-out 0.5s 5 reverse ;
+}
+/* @keyframes WidthAnimation {
+    from{ width:300px;}
+    to{height:600px;}
+     */
+/* } */
+@keyframes WidthAnimation {
+    0%{ width:300px;
+    height:600px;}
+ 20%{ width:30px;
+    height:60px;}
+     50%{ width: 90px;
+    height:100px;}
+}
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="box">This is box </div>
+    </div>
+   
+</body>
+</html>

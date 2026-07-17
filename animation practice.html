@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        .progress{
+            background-color: red;
+            height: 3px;
+            animation: progress 1s  ease-in-out 1;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 122px;
+            background-color: black;
+        }
+        main{
+            height:899px ;
+            background-color: blueviolet;
+        }
+        @keyframes progress{
+            0%{width:0}
+            50%{width:40vw;}
+            100%{width:100vw;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header>
+       
+    </header>
+    <main></main>
+</body>
+</html>
