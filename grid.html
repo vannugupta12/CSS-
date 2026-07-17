@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+    .container{
+        display:grid;
+        background-color: crimson;
+        /* grid-row-gap: 4px;
+        grid-column-gap: 5px; */
+        grid-template-columns: auto auto auto;
+        grid-gap: 7px  2px;
+        grid-template-rows: 335px 339px;
+        
+    }
+    .item{
+        background-color: cyan;
+        border:2px solid rebeccapurple;
+        grid-row: 1 / span2;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="itme">4</div>
+
+    </div>
+</body>
+</html>  
