@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height:146px;
+        }
+        .box{
+            /* width: 300px;
+            height:200px; */
+            border:2px solid rgb(61, 59, 57);
+            display: inline-block;
+            /* transform: translate(134px, 56px) rotate(90deg); */
+            transform-origin: 0;
+            /* transform: scalex( 5, 2);
+            transform: scaleX( 8);
+            transform: scaleY(8); */
+            /* transform: skew(44deg, 0deg ); */
+            /* transform: rotateX(45deg); */
+        }
+        .box img:hover{
+            width: 546px;
+            height: 4155;
+        }
+        img{
+            width: 546px;
+            height: 4155;
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 5s; */
+            transition: width 1s ease-in-out, height 1s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> 
+            <img id="myimage"src="https://t3.ftcdn.net/jpg/05/44/06/92/360_F_544069255_g1dO2HbSP8G5KtMN3aHc9auQJBVeJEdI.jpg" alt="image"> 
+            <button id="btn">Toggle</button>
+         </div> 
+    </div>
+</body>
+<script>
+    myimage.style.width ='146px';
+    btn.addEventListener("click",()=>{
+    if(myimage.style.width ==='546px')
+{
+   myimage.style.width = "146px";
+} else if(myimage.style.width ==='146px'){
+    myimage.style.width ='546px'  
+    }}
+    )
+</script> 
+</html>
